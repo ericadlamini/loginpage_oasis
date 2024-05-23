@@ -1,6 +1,7 @@
 body {
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
 }
 
 .container {
@@ -24,20 +25,25 @@ body {
   padding: 40px 50px 60px;
   border-radius: 10px;
   position: absolute;
+  top: -30%;
   left: 50%;
   transform: translate(-50%, 50%);
   text-align: center;
 }
 
 .input-user {
-  width: 100%;
+  width: 80%;
   padding: 8px;
   border: none;
   border-radius: 5px;
   text-align: left;
+  background: none;
+  border-bottom: 1px solid white;
+  color: white;
 }
 
-.user-btn {
+#login-btn,
+#signup-btn {
   margin-top: 20px;
   width: 60%;
   border-radius: 5px;
@@ -46,4 +52,37 @@ body {
   background: #9f637b;
   color: white;
   cursor: pointer;
+  transition: ease-in;
+}
+
+#login-btn:hover {
+  color: #bf819a;
+  background: white;
+}
+
+#signup-btn:hover {
+  color: #bf819a;
+  background: white;
+}
+
+#login-btn:active {
+  background: #908288;
+  color: white;
+}
+
+#signup-btn:active {
+  background: #908288;
+  color: white;
+}
+
+h1 {
+  font-family: "Federo", sans-serif;
+  font-size: 50px;
+}
+h2 {
+  margin-bottom: 40px;
+}
+a {
+  color: #9f637b;
+  text-decoration: none;
 }

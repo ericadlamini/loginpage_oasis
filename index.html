@@ -4,25 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Federo&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <div class="form-container">
-        <form>
-          <h1>Sign In</h1>
+        <form id="form">
+          <div class="error" id="error"></div>
+          <h1>MERAKI</h1>
+          <h2>Sign In</h2>
           <p>Username</p>
-          <input type="text" placeholder="Username" class="input-user" />
-          <p>Password</p>
-          <input type="password" placeholder="Password" class="input-user" />
-          <input type="button" value="Login" class="user-btn" /><input
-            type="button"
-            value="Sign Up"
-            class="user-btn"
+          <input
+            type="text"
+            id="username"
+            placeholder="Username"
+            class="input-user"
+            required
+            autocomplete="off"
           />
+          <p>Password</p>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            class="input-user"
+            required
+            autocomplete="off"
+          />
+          <button type="submit" id="login-btn">Sign In</button>
+          <button type="submit" id="signup-btn">Sign Up</button>
           <p>Lost Password? <a href="">Reset Password</a></p>
         </form>
       </div>
     </div>
+
+    <script src="/src/index.js"></script>
   </body>
 </html>
